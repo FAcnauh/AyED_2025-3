@@ -1,0 +1,6 @@
+C:\Users\alumno.ET37\Desktop\0_AriasxHuanca\Huanca_PC3_J Y M\0_PC3_11\0_PC3_11\bin\Debug\0_PC3_11.exe.config
+C:\Users\alumno.ET37\Desktop\0_AriasxHuanca\Huanca_PC3_J Y M\0_PC3_11\0_PC3_11\bin\Debug\0_PC3_11.exe
+C:\Users\alumno.ET37\Desktop\0_AriasxHuanca\Huanca_PC3_J Y M\0_PC3_11\0_PC3_11\bin\Debug\0_PC3_11.pdb
+C:\Users\alumno.ET37\Desktop\0_AriasxHuanca\Huanca_PC3_J Y M\0_PC3_11\0_PC3_11\obj\Debug\0_PC3_11.csprojResolveAssemblyReference.cache
+C:\Users\alumno.ET37\Desktop\0_AriasxHuanca\Huanca_PC3_J Y M\0_PC3_11\0_PC3_11\obj\Debug\0_PC3_11.exe
+C:\Users\alumno.ET37\Desktop\0_AriasxHuanca\Huanca_PC3_J Y M\0_PC3_11\0_PC3_11\obj\Debug\0_PC3_11.pdb
