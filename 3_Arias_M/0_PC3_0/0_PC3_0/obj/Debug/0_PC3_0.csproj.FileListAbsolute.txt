@@ -1,6 +1,0 @@
-C:\Users\alumno.ET37\Desktop\3_Arias_Huanca\0_PC3_0\0_PC3_0\bin\Debug\0_PC3_0.exe.config
-C:\Users\alumno.ET37\Desktop\3_Arias_Huanca\0_PC3_0\0_PC3_0\bin\Debug\0_PC3_0.exe
-C:\Users\alumno.ET37\Desktop\3_Arias_Huanca\0_PC3_0\0_PC3_0\bin\Debug\0_PC3_0.pdb
-C:\Users\alumno.ET37\Desktop\3_Arias_Huanca\0_PC3_0\0_PC3_0\obj\Debug\0_PC3_0.csprojResolveAssemblyReference.cache
-C:\Users\alumno.ET37\Desktop\3_Arias_Huanca\0_PC3_0\0_PC3_0\obj\Debug\0_PC3_0.exe
-C:\Users\alumno.ET37\Desktop\3_Arias_Huanca\0_PC3_0\0_PC3_0\obj\Debug\0_PC3_0.pdb
