@@ -1,0 +1,5 @@
+C:\Users\alumno.ET37\Desktop\Arias_Huanca_PC3\Huanca_J\2_PC3_10\2_PC3_10\bin\Debug\2_PC3_10.exe.config
+C:\Users\alumno.ET37\Desktop\Arias_Huanca_PC3\Huanca_J\2_PC3_10\2_PC3_10\bin\Debug\2_PC3_10.exe
+C:\Users\alumno.ET37\Desktop\Arias_Huanca_PC3\Huanca_J\2_PC3_10\2_PC3_10\bin\Debug\2_PC3_10.pdb
+C:\Users\alumno.ET37\Desktop\Arias_Huanca_PC3\Huanca_J\2_PC3_10\2_PC3_10\obj\Debug\2_PC3_10.exe
+C:\Users\alumno.ET37\Desktop\Arias_Huanca_PC3\Huanca_J\2_PC3_10\2_PC3_10\obj\Debug\2_PC3_10.pdb
