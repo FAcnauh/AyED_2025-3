@@ -1,0 +1,14 @@
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\bin\Debug\net8.0\2_PC3_13.exe
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\bin\Debug\net8.0\2_PC3_13.deps.json
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\bin\Debug\net8.0\2_PC3_13.runtimeconfig.json
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\bin\Debug\net8.0\2_PC3_13.dll
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\bin\Debug\net8.0\2_PC3_13.pdb
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\obj\Debug\net8.0\2_PC3_13.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\obj\Debug\net8.0\2_PC3_13.AssemblyInfoInputs.cache
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\obj\Debug\net8.0\2_PC3_13.AssemblyInfo.cs
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\obj\Debug\net8.0\2_PC3_13.csproj.CoreCompileInputs.cache
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\obj\Debug\net8.0\2_PC3_13.dll
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\obj\Debug\net8.0\refint\2_PC3_13.dll
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\obj\Debug\net8.0\2_PC3_13.pdb
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\obj\Debug\net8.0\2_PC3_13.genruntimeconfig.cache
+C:\Users\Polaco y Figaro\Desktop\PC\3_Huanca_J\2_PC3_13\2_PC3_13\obj\Debug\net8.0\ref\2_PC3_13.dll
