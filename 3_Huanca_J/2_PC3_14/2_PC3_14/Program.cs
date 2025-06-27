@@ -1,0 +1,701 @@
+﻿etapa 2 tp 14
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace _2_PC13_14
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            # TP 1º Cuatri - Centro de Investigación de Pochimons
+
+            Bienvenidos al Centro de Investigación de Pochimons, un lugar dedicado a la investigación y desarrollo de nuevas 
+            criaturas llamadas Pochimons. Como parte del equipo de desarrollo del centro, se te ha encomendado la tarea de crear
+            un programa que permita gestionar la Pochidex, un sistema para registrar y gestionar la información de los
+            Pochimons, así como las investigaciones realizadas sobre ellos. La Pochidex tiene una capacidad máxima de 75
+            espacios, debido a que hay 75 tipos de Pochimons posibles.
+
+            Descripción del Problema:
+
+            En el Centro de Investigación de Pochimons, se manejan diversos aspectos relacionados con la investigación de estas
+            criaturas. Cada Pochimon tiene una serie de atributos que deben ser registrados y gestionados adecuadamente.
+            Además, hay varios investigadores que trabajan en la investigación de los Pochimons y es necesario mantener un
+            registro de sus actividades.
+
+            Atributos de los Pochimons:
+
+            - **Nombre**: Nombre del Pochimon.
+            - **Tipo**: Tipo del Pochimon (A: Agua, F: Fuego, P: Planta).
+            - **Nivel**: Nivel de experiencia del Pochimon.
+            - **Estado**: Estado del Pochimon (0: no investigado, 1: en investigación, 2: investigado).
+            - **Investigador Asignado**: Código numérico del investigador asignado al Pochimon (puede ser 0 si no está asignado).
+
+            Nota: El ID del Pochimon será el número de fila en la matriz.
+            */
+            int conta = -1;
+            int conta_lista_visual = 0;
+            int m;
+            m = 0;
+            Random rand = new Random();
+            string nombre;
+            nombre = "0";
+            string tipo;
+            tipo = "0";
+            string nivel;
+            nivel = "0";
+            string estado;
+            estado = "0";
+            string[,] Pochidex = new string[75, 6];
+            int Pochimons_Registrados;
+            Pochimons_Registrados = 0;
+
+            Console.WriteLine("--------------------------------------------------\nMenú Principal - Centro de Investigación de Pochimons\n--------------------------------------------------\nPochimones Encontrados:" + Pochimons_Registrados + "/75\n1. Registrar Pochimon\n2. Asignar Investigador a Pochimon\n3. Actualizar Nivel de Pochimon\n4. Marcar Pochimon como Investigado\n5. Mostrar Información de Pochimons\n6. Buscar Pochimons por Tipo\n7. Mostrar Pochimons por Investigador\n8. Mostrar Pochimons Picados\n9. Salir\n--------------------------------------------------\nIngrese la opción deseada:");
+            m = int.Parse(Console.ReadLine());
+            Console.Clear();
+            while (m != 9)
+
+            {
+                switch (m)
+                {
+                    case 1:
+                        if (Pochimons_Registrados < 75)
+                        {
+
+
+                            Console.WriteLine("Ingresa Nombre, Tipo y Nivel de Pochimon");
+                            Console.WriteLine("Nombre del nuevo Pochimon:");
+                            nombre = Console.ReadLine();
+                            Console.WriteLine("Tipo de pochimon (Agua/Fuego/Tierra/Planta):");
+                            tipo = Console.ReadLine();
+                            while (tipo.ToUpper() != "FUEGO" && tipo.ToUpper() != "AGUA" && tipo.ToUpper() != "TIERRA" && tipo.ToUpper() != "PLANTA")
+                            {
+                                Console.WriteLine("Por favor, coloque una de las siguientes opciones: Agua/Fuego/Tierra/Planta");
+                                Console.WriteLine("Tipo de pochimon (Agua/Fuego/Tierra/Planta):");
+                                tipo = Console.ReadLine();
+                            }
+
+
+                            Console.WriteLine("Nivel del pochimon:");
+                            nivel = Console.ReadLine();
+                            for (int c = 0; c < 6; c++)
+                            {
+                                if (c == 0)
+                                {
+
+                                    conta++;
+                                    conta_lista_visual++;
+                                    Pochidex[conta, c] = conta_lista_visual.ToString();
+                                }
+                                if (c == 1)
+                                {
+                                    Pochidex[conta, c] = nombre;
+                                }
+
+                                if (c == 2)
+                                {
+                                    Pochidex[conta, c] = tipo.ToUpper();
+                                }
+                                if (c == 3)
+                                {
+                                    Pochidex[conta, c] = nivel;
+                                }
+                                if (c == 4)
+                                {
+
+                                    Pochidex[conta, c] = "0";
+                                }
+                                if (c == 5)
+                                {
+
+                                    Pochidex[conta, c] = "0";
+                                }
+
+
+
+
+
+                            }
+                            Console.WriteLine("|Fila\t|Nombre\t\t|tipo\t|nivel\t|estado\t|investigador asignado");
+
+                            Console.Write("|" + Pochidex[conta, 0] + "\t");
+
+
+
+                            if (nombre.Length <= 6)
+                                Console.Write("|" + Pochidex[conta, 1] + "\t\t");
+                            else
+                                Console.Write("|" + Pochidex[conta, 1] + "\t");
+
+
+                            for (int i = 2; i < 6; i++)
+                            {
+                                Console.Write("|" + Pochidex[conta, i] + "\t");
+                            }
+
+
+                            Pochimons_Registrados++;
+                            Console.WriteLine("\nToca Cualquier Tecla para volver al Menu.");
+
+
+                            Console.ReadKey();
+                            Console.Clear();
+                            m = 10;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Vaya... Parece que No hay Mas espacio en la Pochidex :(");
+                            Console.WriteLine("\nToca Cualquier Tecla para volver al Menu.");
+
+
+                            Console.ReadKey();
+                            Console.Clear();
+                            m = 10;
+                        }
+                        break;
+                    case 2:
+                        if (Pochimons_Registrados > 0)
+                        {
+                            Console.WriteLine("Pochimons no investigados:");
+                            Console.WriteLine("|Fila\t|Nombre\t\t|tipo\t|nivel\t|estado\t|investigador asignado");
+
+                            for (int i = 0; i < Pochimons_Registrados; i++)
+                            {
+                                if (Pochidex[i, 4] == "0")
+                                {
+                                    string nombreActual = Pochidex[i, 1];
+                                    Console.Write("|" + Pochidex[i, 0] + "\t");
+
+
+
+                                    if (nombreActual.Length <= 6)
+                                    {
+                                        Console.Write("|" + Pochidex[i, 1] + "\t\t");
+                                    }
+
+                                    else
+                                    {
+                                        Console.Write("|" + Pochidex[i, 1] + "\t");
+                                    }
+
+
+
+                                    for (int a = 2; a < 6; a++)
+                                    {
+                                        Console.Write("|" + Pochidex[i, a] + "\t");
+                                    }
+
+                                }
+                                Console.WriteLine();
+
+
+                            }
+                            Console.WriteLine("Ingrese el número de fila del Pochimon a asignar:");
+
+                            int asignar;
+                            asignar = int.Parse(Console.ReadLine());
+                            int asignarvisual;
+                            asignarvisual = asignar - 1;
+
+
+                            if (Pochidex[asignarvisual, 4] == "0")
+                            {
+
+                                Pochidex[asignarvisual, 4] = "1";
+                                Console.WriteLine("Ingrese el código del Investigador:");
+                                Pochidex[asignarvisual, 5] = Console.ReadLine();
+
+                            }
+                            else
+                            {
+                                Console.WriteLine("Este pokemon ya esta siendo investigado");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Primero tenes que registrar un pochimon!!");
+
+                        }
+                        Console.WriteLine("\nToca Cualquier Tecla para volver al Menu.");
+
+
+                        Console.ReadKey();
+                        Console.Clear();
+                        m = 10;
+                        break;
+                    case 3:
+
+
+
+
+                        if (Pochimons_Registrados > 0)
+                        {
+
+
+                            Console.WriteLine("Pochimons registrados:");
+                            Console.WriteLine("|Fila\t|Nombre\t\t|nivel");
+                            for (int i = 0; i < Pochimons_Registrados; i++)
+                            {
+
+                                string nombreActual = Pochidex[i, 1];
+                                Console.Write("|" + Pochidex[i, 0] + "\t");
+
+
+
+                                if (nombreActual.Length <= 6)
+                                {
+                                    Console.Write("|" + Pochidex[i, 1] + "\t\t");
+                                }
+
+                                else
+                                {
+                                    Console.Write("|" + Pochidex[i, 1] + "\t");
+                                }
+
+
+
+                                Console.Write("|" + Pochidex[i, 3] + "\t");
+
+
+
+                                Console.WriteLine();
+
+
+                            }
+                            Console.WriteLine("Ingrese el número de fila del Pochimon a actualizar:");
+                            int pochimon;
+                            pochimon = int.Parse(Console.ReadLine());
+                            int pasaje;
+                            int final;
+                            int numeroAleatorio = rand.Next(1, 4);
+
+                            string subirnivel = Pochidex[pochimon - 1, 3];
+                            pasaje = int.Parse(subirnivel);
+                            final = pasaje + numeroAleatorio;
+                            Pochidex[pochimon - 1, 3] = final.ToString();
+                            Console.WriteLine("El nivel se incremento: " + numeroAleatorio);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Primero tenes que registrar un pochimon!!");
+                        }
+                        Console.WriteLine("\nToca Cualquier Tecla para volver al Menu.");
+                        Console.ReadKey();
+                        Console.Clear();
+                        m = 10;
+
+
+                        break;
+                    case 4:
+                        if (Pochimons_Registrados > 0)
+                        {
+                            Console.WriteLine("Pochimons en investigacion:");
+                            Console.WriteLine("|Fila\t|Nombre\t\t|tipo\t|nivel\t|estado\t|investigador asignado");
+
+                            for (int i = 0; i < Pochimons_Registrados; i++)
+                            {
+                                if (Pochidex[i, 4] == "1")
+                                {
+                                    string nombreActual = Pochidex[i, 1];
+                                    Console.Write("|" + Pochidex[i, 0] + "\t");
+
+
+
+                                    if (nombreActual.Length <= 6)
+                                    {
+                                        Console.Write("|" + Pochidex[i, 1] + "\t\t");
+                                    }
+
+                                    else
+                                    {
+                                        Console.Write("|" + Pochidex[i, 1] + "\t");
+                                    }
+
+
+
+                                    for (int a = 2; a < 6; a++)
+                                    {
+                                        Console.Write("|" + Pochidex[i, a] + "\t");
+                                    }
+
+                                }
+                                Console.WriteLine();
+
+
+                            }
+                            Console.WriteLine("Ingrese el número de fila del Pochimon a marcar como investigado:");
+
+                            int asignar;
+                            asignar = int.Parse(Console.ReadLine());
+                            int asignarvisual;
+                            asignarvisual = asignar - 1;
+
+
+                            if (Pochidex[asignarvisual, 4] == "1")
+                            {
+
+                                Pochidex[asignarvisual, 4] = "2";
+
+
+
+                            }
+                            else if (Pochidex[asignarvisual, 4] == "2")
+                            {
+                                Console.WriteLine("Este pokemon ya esta investigado (2)");
+                            }
+                            else if (Pochidex[asignarvisual, 4] == "0")
+                            {
+                                Console.WriteLine("Este pokemon no esta en investigacion!!, ve a |asignar investigador| para que este en investigacion (1)");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Primero tenes que registrar un pochimon!!");
+
+                        }
+                        Console.WriteLine("\nToca Cualquier Tecla para volver al Menu.");
+
+
+                        Console.ReadKey();
+                        Console.Clear();
+                        m = 10;
+                        break;
+                    case 5:
+                        if (Pochimons_Registrados > 0)
+                        {
+
+                            Console.WriteLine("|Fila\t|Nombre\t\t|tipo\t|nivel\t|estado\t|investigador asignado");
+
+                            for (int i = 0; i < Pochimons_Registrados; i++)
+                            {
+
+                                string nombreActual = Pochidex[i, 1];
+                                Console.Write("|" + Pochidex[i, 0] + "\t");
+
+
+
+                                if (nombreActual.Length <= 6)
+                                {
+                                    Console.Write("|" + Pochidex[i, 1] + "\t\t");
+                                }
+
+                                else
+                                {
+                                    Console.Write("|" + Pochidex[i, 1] + "\t");
+                                }
+
+
+
+                                for (int a = 2; a < 6; a++)
+                                {
+                                    Console.Write("|" + Pochidex[i, a] + "\t");
+                                }
+                                Console.WriteLine();
+                            }
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("Primero tenes que registrar un pochimon!!");
+
+                        }
+                        Console.WriteLine("\nToca Cualquier Tecla para volver al Menu.");
+
+
+                        Console.ReadKey();
+                        Console.Clear();
+                        m = 10;
+
+                        break;
+                    case 6:
+                        if (Pochimons_Registrados > 0)
+                        {
+                            Console.WriteLine("Ingrese el tipo de Pochimon a buscar (Agua/Fuego/Planta/Tierra): ");
+                            string tipopochimon;
+                            tipopochimon = Console.ReadLine();
+                            Console.WriteLine("|Fila\t|Nombre\t\t|tipo\t|nivel\t|estado\t|investigador asignado");
+
+
+                            for (int i = 0; i < Pochimons_Registrados; i++)
+                            {
+                                if (tipopochimon.ToUpper() == "FUEGO")
+                                {
+                                    if (Pochidex[i, 2] == "FUEGO")
+                                    {
+                                        string nombreActual = Pochidex[i, 1];
+                                        Console.Write("|" + Pochidex[i, 0] + "\t");
+
+
+
+                                        if (nombreActual.Length <= 6)
+                                        {
+                                            Console.Write("|" + Pochidex[i, 1] + "\t\t");
+                                        }
+
+                                        else
+                                        {
+                                            Console.Write("|" + Pochidex[i, 1] + "\t");
+                                        }
+
+
+
+                                        for (int a = 2; a < 6; a++)
+                                        {
+                                            Console.Write("|" + Pochidex[i, a] + "\t");
+                                        }
+                                        Console.WriteLine();
+                                    }
+                                }
+                                if (tipopochimon.ToUpper() == "AGUA")
+                                {
+                                    if (Pochidex[i, 2] == "AGUA")
+                                    {
+                                        string nombreActual = Pochidex[i, 1];
+                                        Console.Write("|" + Pochidex[i, 0] + "\t");
+
+
+
+                                        if (nombreActual.Length <= 6)
+                                        {
+                                            Console.Write("|" + Pochidex[i, 1] + "\t\t");
+                                        }
+
+                                        else
+                                        {
+                                            Console.Write("|" + Pochidex[i, 1] + "\t");
+                                        }
+
+
+
+                                        for (int a = 2; a < 6; a++)
+                                        {
+                                            Console.Write("|" + Pochidex[i, a] + "\t");
+                                        }
+                                        Console.WriteLine();
+                                    }
+                                }
+                                if (tipopochimon.ToUpper() == "TIERRA")
+                                {
+                                    if (Pochidex[i, 2] == "TIERRA")
+                                    {
+                                        string nombreActual = Pochidex[i, 1];
+                                        Console.Write("|" + Pochidex[i, 0] + "\t");
+
+
+
+                                        if (nombreActual.Length <= 6)
+                                        {
+                                            Console.Write("|" + Pochidex[i, 1] + "\t\t");
+                                        }
+
+                                        else
+                                        {
+                                            Console.Write("|" + Pochidex[i, 1] + "\t");
+                                        }
+
+
+
+                                        for (int a = 2; a < 6; a++)
+                                        {
+                                            Console.Write("|" + Pochidex[i, a] + "\t");
+                                        }
+                                        Console.WriteLine();
+                                    }
+                                }
+                                if (tipopochimon.ToUpper() == "PLANTA")
+                                {
+                                    if (Pochidex[i, 2] == "PLANTA")
+                                    {
+                                        string nombreActual = Pochidex[i, 1];
+                                        Console.Write("|" + Pochidex[i, 0] + "\t");
+
+
+
+                                        if (nombreActual.Length <= 6)
+                                        {
+                                            Console.Write("|" + Pochidex[i, 1] + "\t\t");
+                                        }
+
+                                        else
+                                        {
+                                            Console.Write("|" + Pochidex[i, 1] + "\t");
+                                        }
+
+
+
+                                        for (int a = 2; a < 6; a++)
+                                        {
+                                            Console.Write("|" + Pochidex[i, a] + "\t");
+                                        }
+                                        Console.WriteLine();
+                                    }
+                                }
+
+                            }
+
+
+
+
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("Registra un pochimon para continuar!!");
+                        }
+                        Console.WriteLine("\nToca Cualquier Tecla para volver al Menu.");
+
+
+                        Console.ReadKey();
+                        Console.Clear();
+                        m = 10;
+                        break;
+                    case 7:
+                        if (Pochimons_Registrados > 0)
+                        {
+                            Console.WriteLine("Ingrese el código del Investigador: ");
+                            string tipopochimon;
+                            tipopochimon = Console.ReadLine();
+                            Console.WriteLine("|Fila\t|Nombre\t\t|tipo\t|nivel\t|estado\t|investigador asignado");
+
+
+                            for (int i = 0; i < Pochimons_Registrados; i++)
+                            {
+
+                                if (Pochidex[i, 5] == tipopochimon)
+                                {
+                                    string nombreActual = Pochidex[i, 1];
+                                    Console.Write("|" + Pochidex[i, 0] + "\t");
+
+
+
+                                    if (nombreActual.Length <= 6)
+                                    {
+                                        Console.Write("|" + Pochidex[i, 1] + "\t\t");
+                                    }
+
+                                    else
+                                    {
+                                        Console.Write("|" + Pochidex[i, 1] + "\t");
+                                    }
+
+
+
+                                    for (int a = 2; a < 6; a++)
+                                    {
+                                        Console.Write("|" + Pochidex[i, a] + "\t");
+                                    }
+                                    Console.WriteLine();
+                                }
+
+
+
+                            }
+
+
+
+
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("Registra un pochimon para continuar!!");
+                        }
+                        Console.WriteLine("\nToca Cualquier Tecla para volver al Menu.");
+
+
+                        Console.ReadKey();
+                        Console.Clear();
+                        m = 10;
+                        break;
+                    case 8:
+                        if (Pochimons_Registrados > 0)
+                        {
+                            Console.WriteLine("Pochimons Picados (Nivel Mayor a 30!!): ");
+
+                            Console.WriteLine("|Fila\t|Nombre\t\t|tipo\t|nivel\t|estado\t|investigador asignado");
+
+
+                            for (int i = 0; i < Pochimons_Registrados; i++)
+                            {
+                                int conversor;
+                                string nivelpochimon = Pochidex[i, 3];
+                                conversor = int.Parse(nivelpochimon);
+                                if (conversor > 30)
+                                {
+                                    string nombreActual = Pochidex[i, 1];
+                                    Console.Write("|" + Pochidex[i, 0] + "\t");
+
+
+
+                                    if (nombreActual.Length <= 6)
+                                    {
+                                        Console.Write("|" + Pochidex[i, 1] + "\t\t");
+                                    }
+
+                                    else
+                                    {
+                                        Console.Write("|" + Pochidex[i, 1] + "\t");
+                                    }
+
+
+
+                                    for (int a = 2; a < 6; a++)
+                                    {
+                                        Console.Write("|" + Pochidex[i, a] + "\t");
+                                    }
+                                    Console.WriteLine();
+                                }
+
+
+
+                            }
+
+
+
+
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("Registra un pochimon para continuar!!");
+                        }
+                        Console.WriteLine("\nToca Cualquier Tecla para volver al Menu.");
+
+
+                        Console.ReadKey();
+                        Console.Clear();
+                        m = 10;
+                        break;
+                    case 9:
+                        m = 9;
+                        break;
+                    case 10:
+                        Console.WriteLine("--------------------------------------------------\nMenú Principal - Centro de Investigación de Pochimons\n--------------------------------------------------\nPochimones Encontrados:" + Pochimons_Registrados + "/75\n1. Registrar Pochimon\n2. Asignar Investigador a Pochimon\n3. Actualizar Nivel de Pochimon\n4. Marcar Pochimon como Investigado\n5. Mostrar Información de Pochimons\n6. Buscar Pochimons por Tipo\n7. Mostrar Pochimons por Investigador\n8. Mostrar Pochimons Picados\n9. Salir\n--------------------------------------------------\nIngrese la opción deseada:");
+                        m = int.Parse(Console.ReadLine());
+                        Console.Clear();
+                        break;
+                    default:
+                        Console.WriteLine("Por favor, coloque una de las opciones del Menu.");
+                        Console.WriteLine("\nToca Cualquier Tecla para volver al Menu.");
+                        Console.ReadKey();
+                        Console.Clear();
+                        m = 10;
+                        break;
+
+                }
+
+            }
+
+
+        }
+    }
+}
