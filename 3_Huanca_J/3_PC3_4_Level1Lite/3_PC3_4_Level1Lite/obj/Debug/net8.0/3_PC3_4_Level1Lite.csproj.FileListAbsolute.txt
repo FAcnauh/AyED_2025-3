@@ -1,0 +1,14 @@
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\bin\Debug\net8.0\3_PC3_4_Level1Lite.exe
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\bin\Debug\net8.0\3_PC3_4_Level1Lite.deps.json
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\bin\Debug\net8.0\3_PC3_4_Level1Lite.runtimeconfig.json
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\bin\Debug\net8.0\3_PC3_4_Level1Lite.dll
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\bin\Debug\net8.0\3_PC3_4_Level1Lite.pdb
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\obj\Debug\net8.0\3_PC3_4_Level1Lite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\obj\Debug\net8.0\3_PC3_4_Level1Lite.AssemblyInfoInputs.cache
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\obj\Debug\net8.0\3_PC3_4_Level1Lite.AssemblyInfo.cs
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\obj\Debug\net8.0\3_PC3_4_Level1Lite.csproj.CoreCompileInputs.cache
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\obj\Debug\net8.0\3_PC3_4_Level1Lite.dll
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\obj\Debug\net8.0\refint\3_PC3_4_Level1Lite.dll
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\obj\Debug\net8.0\3_PC3_4_Level1Lite.pdb
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\obj\Debug\net8.0\3_PC3_4_Level1Lite.genruntimeconfig.cache
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_4_Level1Lite\3_PC3_4_Level1Lite\obj\Debug\net8.0\ref\3_PC3_4_Level1Lite.dll
