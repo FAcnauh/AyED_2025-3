@@ -1,0 +1,14 @@
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\obj\Debug\net8.0\3_PC3_5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\obj\Debug\net8.0\3_PC3_5.AssemblyInfoInputs.cache
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\obj\Debug\net8.0\3_PC3_5.AssemblyInfo.cs
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\obj\Debug\net8.0\3_PC3_5.csproj.CoreCompileInputs.cache
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\bin\Debug\net8.0\3_PC3_5.exe
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\bin\Debug\net8.0\3_PC3_5.deps.json
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\bin\Debug\net8.0\3_PC3_5.runtimeconfig.json
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\bin\Debug\net8.0\3_PC3_5.dll
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\bin\Debug\net8.0\3_PC3_5.pdb
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\obj\Debug\net8.0\3_PC3_5.dll
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\obj\Debug\net8.0\refint\3_PC3_5.dll
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\obj\Debug\net8.0\3_PC3_5.pdb
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\obj\Debug\net8.0\3_PC3_5.genruntimeconfig.cache
+C:\Users\Polaco y Figaro\Desktop\3_Arias_Huanca\FACU\3_PC3_5\3_PC3_5\obj\Debug\net8.0\ref\3_PC3_5.dll
