@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\visual studio\proyectos\3_PC3_4_Level4Lite\bin\Debug\3_PC3_4_Level4Lite.exe.config
+C:\Users\User\Desktop\visual studio\proyectos\3_PC3_4_Level4Lite\obj\Debug\3_PC3_4_Level4Lite.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\visual studio\proyectos\3_PC3_4_Level4Lite\bin\Debug\3_PC3_4_Level4Lite.exe
+C:\Users\User\Desktop\visual studio\proyectos\3_PC3_4_Level4Lite\bin\Debug\3_PC3_4_Level4Lite.pdb
+C:\Users\User\Desktop\visual studio\proyectos\3_PC3_4_Level4Lite\obj\Debug\3_PC3_4_Level4Lite.exe
+C:\Users\User\Desktop\visual studio\proyectos\3_PC3_4_Level4Lite\obj\Debug\3_PC3_4_Level4Lite.pdb
